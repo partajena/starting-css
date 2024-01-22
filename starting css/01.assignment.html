@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .internal{color: green;}
+        .internal_internal{
+            color: red;
+        }
+        .internal_external{
+            color: rgb(0, 255, 170);
+        }
+        .inline_internal_external{
+            color: rgb(0, 255, 170);
+        }
+        <-- depending on the order external wins between internal and external since I have 
+external imported after internal-->
+
+    </style>
+</head>
+<body>
+    <div style="color: red;">inline</div>
+    <div class="internal">internal</div>
+    <div class="external">external</div>
+    <div style="color: aqua;"class="initial-internal">inline+internal</div>
+    <div class="int_external internal_ext">internal+External</div>
+    <div style="color: blueviolet;" class="inline_internal_external-">inline+internal+External</div>
+</body>
+</html>
+style
